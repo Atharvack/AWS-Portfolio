@@ -25,7 +25,7 @@ graph TB
     end
 
     subgraph "DNS & SSL"
-        NAMECHEAP[NAMECHEAP (Custom domain)]
+        NAMECHEAP[NAMECHEAP - Custom domain -]
         ACM[ACM Certificate]
         NAMECHEAP ACM
     end
