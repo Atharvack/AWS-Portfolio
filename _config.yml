@@ -1,6 +1,8 @@
+remote_theme: pages-themes/slate@v0.2.0
+
 title: My AWS Portfolio
 description: >
   A portfolio showcasing AWS services.
 
-remote_theme: pages-themes/slate@v0.2.0
+
 
