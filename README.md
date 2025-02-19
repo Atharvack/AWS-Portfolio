@@ -105,8 +105,8 @@ Let me know if you need further assistance or have any other questions!
 ## Contact
 For any questions or inquiries, please contact:
 
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/atharvack)
-- **GitHub**: [Your GitHub Profile](https://github.com/atharvack)
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/atharvack)
+- **GitHub**: [GitHub Profile](https://github.com/atharvack)
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
