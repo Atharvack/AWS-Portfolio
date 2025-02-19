@@ -20,7 +20,7 @@ graph TB
     subgraph "VPC"
         EC2[DJANGO APP]
         SG[Security Group]
-        EC2 SG
+        
     end
 
     subgraph "DNS & SSL"
@@ -31,8 +31,8 @@ graph TB
 
     CF --> |HTTPS| EC2
     NAMECHEAP --> CF
-   
     ACM --> CF
+    
 </div>
 
 
@@ -93,6 +93,6 @@ graph TB
 
 By following this setup, you can ensure a secure, scalable, and efficient architecture for your Django application with the specified technologies.
 
-###NOTE -> Since the site does not expect a lot of traffic, an application load balancer is not used. This helps to reduce complexity and costs while still providing the necessary functionality.
+### NOTE -> Since the site does not expect a lot of traffic, an application load balancer is not used. This helps to reduce complexity and costs while still providing the necessary functionality.
 
 Let me know if you need further assistance or have any other questions!
