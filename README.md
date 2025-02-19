@@ -13,6 +13,8 @@ This repository showcases a easy walkthrough of AWS services used to host a Djan
 
 
 <div class="mermaid">
+
+  
 graph TB
     subgraph "Global Edge Network"
         CF[CloudFront Distribution]
@@ -21,18 +23,19 @@ graph TB
     subgraph "VPC"
         EC2[DJANGO APP]
         SG[Security Group]
-        EC2 SG
+    
     end
 
     subgraph "DNS & SSL"
-        NAMECHEAP[NAMECHEAP - Custom domain -]
+        NAMECHEAP[NAMECHEAP]
         ACM[ACM Certificate]
-        NAMECHEAP ACM
+        
     end
 
     CF --> |HTTPS| EC2
     NAMECHEAP --> CF
     ACM --> CF
+
 </div>
 
 
