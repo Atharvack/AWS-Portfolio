@@ -34,7 +34,7 @@ graph TB
         ACM[ACM Certificate]
     end
 
-    CF --> |HTTPS| EC2
+    CF --> |HTTPS| --> EC2
     NAMECHEAP --> CF
     ACM --> CF
 </div>
