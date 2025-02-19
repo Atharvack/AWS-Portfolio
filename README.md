@@ -20,11 +20,9 @@ graph TB
     subgraph "VPC"
         EC2[DJANGO APP]
         SG[Security Group]
-        
     end
 
     subgraph "DNS & SSL"
-        
         NAMECHEAP[NAMECHEAP (Custom domain)]
         ACM[ACM Certificate]
     end
@@ -32,7 +30,6 @@ graph TB
     CF --> |HTTPS| EC2
     NAMECHEAP --> CF
     ACM --> CF
-    
 </div>
 
 
