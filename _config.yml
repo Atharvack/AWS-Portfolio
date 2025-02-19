@@ -1,13 +1,12 @@
 title: My AWS Portfolio
 description: >
   A portfolio showcasing AWS services.
-theme: slate
+
 
 # Optional configurations
 # baseurl: "/AWS-Portfolio" # Uncomment and set if your site is in a subdirectory
 url: "https://Atharvack.github.io"
 
-# Enable or disable plugins
+remote_theme: pages-themes/slate@v0.2.0
 plugins:
-  - jekyll-feed
-
+- jekyll-remote-theme # add this line to the plugins list if you already have one
