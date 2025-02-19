@@ -1,6 +1,4 @@
----
-theme: jekyll-theme-slate
----
+
 
 # AWS-Portfolio
 
