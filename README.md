@@ -6,15 +6,9 @@ This repository showcases a easy walkthrough of AWS services used to host a Djan
 
 ## Architecture
 
-<script>
-  (function() {
-    var script = document.createElement("script");
-    script.src = "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.min.js";
-    script.onload = function() {
-      mermaid.initialize({ startOnLoad: true });
-    };
-    document.head.appendChild(script);
-  })();
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({startOnLoad:true});
 </script>
 
 
@@ -27,14 +21,16 @@ graph TB
     subgraph "VPC"
         EC2[DJANGO APP]
         SG[Security Group]
+        EC2 SG
     end
 
     subgraph "DNS & SSL"
         NAMECHEAP[NAMECHEAP (Custom domain)]
         ACM[ACM Certificate]
+        NAMECHEAP ACM
     end
 
-    CF --> |HTTPS| --> EC2
+    CF --> |HTTPS| EC2
     NAMECHEAP --> CF
     ACM --> CF
 </div>
