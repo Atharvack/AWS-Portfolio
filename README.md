@@ -2,7 +2,7 @@
 
 # AWS-Portfolio
 
-This repository showcases a portfolio of AWS services used to host a Django application. The repo contains vivid illustration, which can be followed to host a website on cloud.
+This repository showcases a easy walkthrough of AWS services used to host a Django application. This architecture has been followed by me to host my own portfolio website. 
 
 ## Architecture
 
@@ -25,7 +25,7 @@ graph TB
 
     subgraph "DNS & SSL"
         
-        NAMECHEAP[NAMECHEAP]
+        NAMECHEAP[NAMECHEAP (Custom domain)]
         ACM[ACM Certificate]
     end
 
@@ -45,7 +45,7 @@ AWS CloudFront is used to distribute content globally with low latency. It acts 
 ### 2. VPC and Security Group
 The EC2 instance is hosted within a Virtual Private Cloud (VPC) and associated with a Security Group to control inbound and outbound traffic.
 
-### 4. DNS & SSL
+### 3. DNS & SSL
 - **Namecheap**: Domain management and DNS settings are configured using Namecheap.
 - **ACM**: AWS Certificate Manager is used to manage SSL/TLS certificates for securing the website.
 
@@ -85,14 +85,27 @@ graph TB
 
 
 #### Portfolio Application Technical Stack
-- **EC2 Django App**: Runs the Django 4 application on a specific port within a VPC. This instance serves as the origin for CloudFront.
-  - **Django 4**: The backend framework used for the application.
-  - **HTML5**: The standard markup language for creating web pages.
-  - **Bootstrap 5**: The front-end framework used for responsive design and styling.
-  - **Sass**: A preprocessor scripting language that is interpreted or compiled into CSS.
+- **EC2 Django App**: Running on a custom port. This instance serves as the origin for CloudFront.
+- **Django 4**: The backend framework used for the application.
+- **HTML5**: The standard markup language for creating web pages.
+- **Bootstrap 5**: The front-end framework used for responsive design and styling.
+- **Sass**: A preprocessor scripting language that is interpreted or compiled into CSS.
 
-By following this setup, you can ensure a secure, scalable, and efficient architecture for your Django application with the specified technologies.
+
 
 ### NOTE -> Since the site does not expect a lot of traffic, an application load balancer is not used. This helps to reduce complexity and costs while still providing the necessary functionality.
 
+By following this setup, you can ensure a secure, scalable, and efficient architecture for your Django application with the specified technologies.
+
 Let me know if you need further assistance or have any other questions!
+
+## Contact
+For any questions or inquiries, please contact:
+
+- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/atharvack)
+- **GitHub**: [Your GitHub Profile](https://github.com/atharvack)
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+
