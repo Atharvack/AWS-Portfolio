@@ -6,10 +6,17 @@ This repository showcases a easy walkthrough of AWS services used to host a Djan
 
 ## Architecture
 
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({startOnLoad:true});
+<script>
+  (function() {
+    var script = document.createElement("script");
+    script.src = "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.min.js";
+    script.onload = function() {
+      mermaid.initialize({ startOnLoad: true });
+    };
+    document.head.appendChild(script);
+  })();
 </script>
+
 
 <div class="mermaid">
 graph TB
