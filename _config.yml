@@ -1,7 +1,7 @@
 title: My AWS Portfolio
 description: >
   A portfolio showcasing AWS services.
-theme: jekyll-theme-slate
+theme: slate
 
 # Optional configurations
 # baseurl: "/AWS-Portfolio" # Uncomment and set if your site is in a subdirectory
