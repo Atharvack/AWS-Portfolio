@@ -1,3 +1,5 @@
+theme - Jekyll-theme-slate
+
 # AWS-Portfolio
 
 This repository showcases a portfolio of AWS services used to host a Django application. The setup includes CloudFront for content delivery, an EC2 instance for hosting the application, and Namecheap for DNS management.
